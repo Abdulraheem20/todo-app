@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@media(min-width: 768px){
+    body{
+        background-image: url(./images/bg-desktop-light.jpg);
+        background-repeat: no-repeat;
+    }
+    .content{
+        margin-top: 50px;
+        
+    }
+    .todoInput{
+        /* width: 610px;
+        height: 50px; */
+        border: none;
+        background-color: transparent;
+        border-radius: 10px;
+    
+    }
+    .todoInput:focus{
+        outline: none;
+        font-size:larger;
+    }
+    .todo{
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .create-new{
+        margin: 50px 300px 10px 300px;
+    }
+    .taxs{
+        margin: 0px 300px 40px 300px;
+    }
+    label{
+        margin-left: 10px;
+    }
+    input:checked {
+        content: '';
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    .cross{
+        opacity: 0;
+        float: right;
+        transition: .5s ease;
+    }
+    .lines:hover .cross{
+        /* content: url(./images/icon-cross.svg); */
+        opacity: 1;
+        
+    }
+    /* .clear{
+        margin-left: 150px;
+    } */
+}
+
+
+
+
+@media(min-width: 320px){
+    body{
+        background-image: url(./images/bg-desktop-light.jpg);
+        background-repeat: no-repeat;
+    }
+    .content{
+        margin-top: 50px;
+        
+    }
+    .todoInput{
+        /* width: 610px;
+        height: 50px; */
+        border: none;
+        background-color: transparent;
+        border-radius: 10px;
+    
+    }
+    .todoInput:focus{
+        outline: none;
+        font-size:larger;
+    }
+    .todo{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .create-new{
+        margin: 50px 50px 10px 50px;
+    }
+    .taxs{
+        margin: 0px 50px 40px 50px;
+    }
+    label{
+        margin-left: 10px;
+    }
+    input:checked {
+        content: '';
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    .cross{
+        opacity: 0;
+        float: right;
+        transition: .5s ease;
+    }
+    .lines:hover .cross{
+        /* content: url(./images/icon-cross.svg); */
+        opacity: 1;
+}

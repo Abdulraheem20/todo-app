@@ -5,65 +5,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <title>Frontend Mentor | Todo app</title>
 </head>
 <body>
-  <div class="container-fluid ">
+  <div class="container-fluid content">
     <div class="row row1">
-      <div class="col">
-        <div class="todo d-flex gap-5">
-          <h1>T O D O</h1>
-          <img src="./images/icon-sun.svg" alt="">
+      <div class="col-sm">
+        <div class="todo d-flex justify-content-between">
+          <h1 class="text-light"><a href="#" class="nav-link">T O D O</a></h1>
+          <img src="./images/icon-moon.svg" alt="" width="30px">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid create-new ">
+      <div class="row row2">
+        <div class="col-sm bg-light create-new rounded pt-2 ">
+          <p ><input type="text" class="todoInput"  placeholder="Type in your to do"> </p>
         </div>
       </div>
     </div>
     <div class="container-fluid">
-      <div class="row row2">
-        <div class="col bg-light create-new">
-          <p>Create a new todo...</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="line1">
+      <div class="row row3">
+        <div class="col-sm taxs bg-light rounded">
+          <div class="line1 lines mx-3 pt-3">
             <input type="checkbox" checked="checked">
-            <label for="checkbox"><del>Complete online Javascript course</del></label>
-            <span></span>
+            <label for="checkbox" class="opacity-50"><del>Complete online Javascript course</del></label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line2 lines mx-3">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">Jog around the park 3x</label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line3 lines mx-3">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">10 minutes meditation</label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line4 lines mx-3">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">Read for 1 hour </label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line5 lines mx-3">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">Pick uo groceries</label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line6 lines mx-3">
+            <input type="checkbox" class="checkbox">
+            <label for="checkbox">Complete Todo App on Frontend Mentor</label>
+            <img src="./images/icon-cross.svg" alt="" class="cross">
+          </div> <hr>
+          <div class="line7 mx-3">
+            <div class="row">
+              <div class="col-sm">
+                <p>5 items left</p>
+              </div>
+              <div class="col-sm text-center">
+                <ul class="nav-item d-flex gap-5">
+                  <li class="nav-link"><a href="#" class="nav-link">All</a></li>
+                  <li class="nav-link"><a href="#" class="nav-link">Active</a></li>
+                  <li class="nav-link"><a href="#" class="nav-link">Completed</a></li>
+                </ul>
+              </div>
+              <div class="col-sm clear">
+                <p><a href="#" class="nav-link">Clear Completed</a></p>
+              </div> 
+            </div>
           </div>
-          <div class="line2">
+          <!-- <div class="line8">
             <input type="checkbox" class="checkbox">
             <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line3">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line4">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line5">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line6">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line7">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
-          <div class="line8">
-            <input type="checkbox" class="checkbox">
-            <label for="checkbox">tax11234567890</label>
-          </div>
+          </div> <hr> -->
         </div>
       </div>
     </div>
+    <p class="opacity-50 text-center mb-5">Drag and drop to reorder list</p>
   </div>
-</body>
+</body><!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </html>
