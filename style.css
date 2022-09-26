@@ -3,11 +3,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Cairo:wght@600&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@500;700&family=La+Belle+Aurore&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@500&display=swap');
 
 body{
     background-image: url(./images/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 .content{
     margin-top: 50px;
@@ -30,7 +33,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    font-weight: 700;
 }
+
 .create-new{
     margin: 50px auto 10px auto;
 }
