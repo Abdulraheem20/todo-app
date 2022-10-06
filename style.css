@@ -28,6 +28,7 @@ svg{
     justify-content: space-between;
     border-bottom: 2px solid white;
     flex-wrap: wrap;
+    word-wrap: break-word;
     /* color: white; */
 }
 .todo-item span{
@@ -51,7 +52,8 @@ svg{
 
 }
 .tick::before{
-    content: '✓';
+    content: '\2713';
+    /* content: '✓'; */
     font-size: 20px;
     display: none;
 }
@@ -113,7 +115,26 @@ svg{
     display: flex;
 }
 
-
+/* @media(min-width: 768px){
+    .todo-item{
+       margin: 10px 0px;
+       padding: 10px;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       border-bottom: 2px solid white;
+       flex-wrap: wrap;
+       word-wrap: break-word;
+     
+}
+@media(min-width: 320px){
+    .todo-item{
+       flex-wrap: wrap;
+       word-wrap: break-word;
+       
+     
+} */
 
 
 
@@ -200,9 +221,7 @@ input:checked {
 
 
 
-/* @media(min-width: 768px){
-   
-}
+/* 
 
 
 
